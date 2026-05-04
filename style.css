@@ -529,18 +529,103 @@ h2 {
     }
 }
 /* 4. Insights Cards */
-.insights-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+.help-story-section {
+    padding: 80px 10%;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
 }
 
-.insight-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+.help-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /* Card aur text ke darmiyan munasib faasla */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Left Story Card Styling */
+.story-card {
+    background: linear-gradient(135deg, #ffc247 0%, #ff9d00 100%); /* Yellow gradient */
+    padding: 60px 50px;
+    border-radius: 40px;
+    flex: 1;
+    max-width: 500px;
+    box-shadow: 0 20px 40px rgba(255, 157, 0, 0.2);
+}
+
+.story-card h2 {
+    font-size: 32px;
+    color: #0d1b3e;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.story-card p {
+    font-size: 18px;
+    color: #0d1b3e;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+.btn-purple-story {
+    background-color: #4338ca; /* Purple color for button */
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Right Help Center Styling */
+.help-center {
+    flex: 1;
+}
+
+.help-center h2 {
+    font-size: 32px;
+    color: #0d1b3e;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.help-center p {
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    max-width: 300px;
+}
+
+.btn-outline-help {
+    border: 2px solid #0d1b3e;
+    color: #0d1b3e;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-outline-help:hover {
+    background-color: #0d1b3e;
+    color: white;
+}
+
+/* Responsive adjustment */
+@media (max-width: 850px) {
+    .help-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .help-center p {
+        margin: 0 auto 30px auto;
+    }
 }
 
 /* 5. CTA Blue */
