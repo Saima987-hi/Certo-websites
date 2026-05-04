@@ -629,15 +629,78 @@ h2 {
 }
 
 /* 5. CTA Blue */
-.cta-blue {
-    background-color: #4c3ce2;
-    color: white;
+.final-cta {
+    background: linear-gradient(135deg, #4c3ce2 0%, #3b2bc4 100%); /* Deep blue gradient */
+    padding: 100px 20px;
     text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
 
-.cta-blue h2 { color: white; }
+.cta-container h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
 
-/* Button Styles (Reusable) */
-.btn-yellow { background: #ffc107; color: #0d1b3e; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: bold; }
-.btn-outline { border: 2px solid #0d1b3e; padding: 12px 25px; border-radius: 25px; text-decoration: none; color: #0d1b3e; font-weight: bold; }
-.btn-outline-white { border: 2px solid white; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; }
+.cta-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Horizontal Buttons Layout */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-yellow {
+    background-color: #ffc247;
+    color: #0d1b3e;
+    text-decoration: none;
+    padding: 16px 35px;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.btn-outline-white {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 16px 35px;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+/* Hover Effects */
+.btn-yellow:hover {
+    transform: scale(1.05);
+}
+
+.btn-outline-white:hover {
+    background-color: white;
+    color: #4c3ce2;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-container h2 {
+        font-size: 32px;
+    }
+    .btn-yellow, .btn-outline-white {
+        width: 100%;
+        max-width: 300px;
+    }
+}
