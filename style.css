@@ -426,23 +426,108 @@ h2 {
 }
 /* 3. Features Section */
 .features-section {
-    background-color: #f4f8ff;
+    background-color: #f0f6ff; /* Light blue background as seen in image */
+    padding: 100px 5%;
     text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 
-.features-container {
+.features-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
     background: white;
-    padding: 50px;
-    border-radius: 40px;
+    padding: 60px 40px;
+    border-radius: 40px; /* Rounded corners for the white box */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
+.features-title {
+    font-size: 32px;
+    color: #0d1b3e;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+/* Grid Layout */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin: 40px 0;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 50px 30px; /* Vertical and Horizontal spacing */
+    margin-bottom: 50px;
 }
 
+.feature-item {
+    text-align: left;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f4f8; /* Light gray for icons placeholder */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Aap yahan apni images/icons as background set kar sakte hain */
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #0d1b3e;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Buttons Section */
+.features-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-yellow {
+    background-color: #ffc247;
+    color: #0d1b3e;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-outline {
+    border: 2px solid #0d1b3e;
+    color: #0d1b3e;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-yellow:hover { background-color: #eab000; }
+.btn-outline:hover { background-color: #0d1b3e; color: white; }
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+    .features-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /* 4. Insights Cards */
 .insights-grid {
     display: grid;
