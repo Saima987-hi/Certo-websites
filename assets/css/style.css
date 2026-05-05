@@ -243,8 +243,6 @@ justify-content: center;
 align-items: center; 
 } 
 
-/* Yellow Border Frame using Pseudo-element */
-
 
 .mission-person-img {
     position: relative;
@@ -334,39 +332,60 @@ margin-bottom: 30px;
 
                             /*Section 5*/
 /* --- SECTION 5: INFO CARDS --- */
+/* --- SECTION 5: INFO CARDS --- */
 .info-cards-section {
-    padding: 80px 0;
-    background-color: #ffffff; /* White background as per design */
+    padding: 100px 0;
+    background-color: #ffffff; /* Ya #f3f7ff agar background light blue chahiye */
     width: 100%;
 }
 
+/* Container spacing fix */
+.info-cards-section .container {
+    max-width: 1100px; /* Cards ko zyada phailne se rokne ke liye */
+}
+
+/* Card Wrapper */
 .info-card {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px; /* Rounded corners jo image mein hain */
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
+/* Hover Effect (Optional but looks professional) */
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
 .info-img {
-    width: 70%;
-    max-width: 700px; /* Adjusting size to match design proportions */
+    width: 100%;
     height: auto;
+    display: block;
     object-fit: contain;
-    /* Adding subtle shadow if the image doesn't already have one */
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.03));
+    /* Box shadow jo design mein depth deti hai */
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.08));
 }
 
-/* --- RESPONSIVE FIX --- */
+/* --- MOBILE RESPONSIVE --- */
 @media (max-width: 767px) {
     .info-cards-section {
-        padding: 40px 15px;
+        padding: 60px 20px;
+    }
+
+    .info-img {
+        max-width: 100%; /* Mobile par poori width */
     }
     
-    .info-img {
-        max-width: 100%; /* Full width on mobile */
-        margin-bottom: 20px;
+    /* Gaps between cards on mobile */
+    .g-4 {
+        --bs-gutter-y: 2rem; 
     }
 }
+
     
                /*Section 6*/
 /* --- SECTION 6: BLUE GRADIENT BANNER --- */
