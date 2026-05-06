@@ -101,7 +101,7 @@ border-radius: 50px !important;
 
 /* Hover effect to make it interactive */
 .fixed-btn-img:hover {
-    transform: scale(1.05);  /* Slightly grows when hovered */
+    transform: scale(5.05);  /* Slightly grows when hovered */
     opacity: 0.9;            /* Slightly fades for a button-click feel */
 }
 
@@ -132,7 +132,7 @@ flex-direction: column;
 } 
 
 .hero-content { 
-padding: 50px 100px; 
+padding: 50px 20px; 
 text-align: center; 
 } 
 .blue-frame { 
