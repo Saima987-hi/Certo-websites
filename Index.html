@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,6 +9,8 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+
 
 
 </head>
@@ -198,50 +199,85 @@
 
 
 
+
 <footer class="custom-footer">
     <div class="container">
         <div class="footer-row-wrapper">
-            
+ 
+            <!-- ── LEFT: Scan.Detect.Remove + social + copyright ── -->
             <div class="logo-col stack">
-                <img src="assets/images/image21.png" alt="Google" class="white-logo img-google">
-            <div class="copyright-row">
-                    <span class="copyright-text">Copyright ©️ 2022 Certo Software Limited | Registered <br> in England & Wales No. 10072356</span>
-    <span class="designed-by">Designed & developed by <a href="#">Bigger Picture</a></span>
+ 
+                <!-- "Scan. Detect. Remove." wordmark (image21) -->
+                <img src="assets/images/image21.png" alt="Scan Detect Remove" class="white-logo img-google">
+ 
+ 
+                <!-- Copyright -->
+                <div class="copyright-row">
+                    <span class="copyright-text">
+                        Copyright ©️ 2022 Certo Software Limited | Registered<br>
+                        in England &amp; Wales No. 10072356
+                    </span>
+                    <span class="designed-by">
+                        Designed &amp; developed by <a href="#">Bigger Picture</a>
+                    </span>
                 </div>
-            
+ 
             </div>
-
+ 
+            <!-- ── MIDDLE: Certo nav links ── -->
             <div class="logo-col">
-                <img src="assets/images/image23.png" alt="Intel" class="white-logo img-intel">
-           
-           
+ 
+                <!-- "Certo" heading with divider (image23 OR plain text) -->
+                <!-- If you have image23, swap out the h3 below -->
+                <img src="assets/images/image23.png" alt="Certo" class="white-logo img-intel" style="margin-bottom:12px;">
+                <hr class="nav-divider">
+ 
+                
+ 
             </div>
-
-
-           
-
-    <div class="box-stack">
-        <div class="yellow-rect">
-            <img src="assets/images/image24.png" alt="Certo" class="certo-main">
-            <img src="assets/images/image25.png" alt="Plus" class="certo-plus">
-        </div>
-        <img src="assets/images/image22.png" alt="Future 50" class="future50-box">
-    </div>
-</div>
-
+ 
+            <!-- ── RIGHT: Yellow newsletter card + white badge box ── -->
+            <div class="box-stack">
+ 
+                <!-- Yellow newsletter card -->
+                <div class="yellow-rect">
+                    <!-- If image24 is the newsletter heading image, use it; otherwise use text -->
+                    <p class="newsletter-title">Sign up to our newsletter</p>
+                    <p class="newsletter-desc">
+                        Receive the latest mobile security news, exclusive
+                        discounts &amp; offers straight to your inbox!
+                    </p>
+ 
+                    <!-- Email form -->
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Email address">
+                        <button type="button">Submit</button>
+                    </div>
+                </div>
+ 
+                <!-- Future 50 / white badge box (image22) -->
+                <img src="assets/images/image22.png" alt="Future 50" class="future50-box">
+ 
+            </div>
+ 
+        </div><!-- /.footer-row-wrapper -->
+ 
+        <!-- ── Legal strip ── -->
         <div class="footer-bottom">
-    <hr class="divider"> 
-
-    <p class="legal-text">
-        Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other  <br>
-        countries. App Store is a service mark of Apple Inc. Android, Google Play  <br>
-        and the Google Play logo are trademarks of Google LLC.
-    </p>
-</div>
-    </div>
-    
-  
+            <hr class="divider">
+            <p class="legal-text">
+                Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other
+                countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play
+                logo are trademarks of Google LLC.
+            </p>
+        </div>
+ 
+    </div><!-- /.container -->
 </footer>
+ 
+</main>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </main>
 
  
