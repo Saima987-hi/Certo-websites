@@ -114,7 +114,7 @@ border-radius: 50px !important;
 }
 
 .fixed-logo {
-    height: 30px;        /* Set the ideal height for your logo */
+    height: 40px;        /* Set the ideal height for your logo */
     width: auto;         /* Maintains the original aspect ratio */
     display: block;
     transition: transform 0.3s ease; /* Adds a smooth feel for interactions */
