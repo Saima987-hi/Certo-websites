@@ -83,12 +83,12 @@ padding: 12px 30px !important;
 border-radius: 50px !important; 
 } 
 /* --- NAVBAR SIGN IN BUTTON --- */
-
-/* Ensures the container moves to the right in Bootstrap navbar */
 .navbar-collapse {
     display: flex;
     align-items: center;
 }
+/* Ensures the container moves to the right in Bootstrap navbar */
+
 
 /* Specific styling for the button image */
 .fixed-btn-img {
